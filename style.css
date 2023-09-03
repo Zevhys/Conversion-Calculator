@@ -1,3 +1,52 @@
 :root {
   color-scheme: dark;
+  font-family: arial;
+}
+
+.kalkulator {
+  margin: auto;
+  max-width: fit-content;
+  border: 2px solid rgb(117, 165, 165);
+  padding: 10px 15px 25px 15px;
+  background-color: rgb(41, 41, 41);
+  color-scheme: light;
+  margin-top: 15%;
+}
+
+.kalkulator > div {
+  display: inline-block;
+}
+
+select {
+  width: 100%;
+}
+
+.sama-dengan {
+  margin: 10px;
+  vertical-align: bottom;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#kategori-menu > input {
+  display: none;
+}
+
+#kategori-menu > input:checked + label {
+  background-color: goldenrod;
+  font-weight: bold;
+  color: black;
+}
+
+#kategori-menu > label {
+  padding: 5px 10px;
+  cursor: pointer;
 }
