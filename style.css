@@ -1,13 +1,16 @@
 :root {
   color-scheme: dark;
   font-family: arial;
-  --color-theme: rgb(112, 129, 175);
+}
+
+body {
+  margin: 0;
 }
 
 .kalkulator {
   margin: auto;
   max-width: fit-content;
-  border: 2px solid var(--color-theme);
+  border: 2px solid rgb(148, 179, 76);
   padding: 10px 15px 25px 15px;
   background-color: rgb(41, 41, 41);
   color-scheme: light;
@@ -42,7 +45,7 @@ button:hover {
 }
 
 #kategori-menu > input:checked + label {
-  background-color: var(--color-theme);
+  background-color: rgb(112, 129, 175);
   font-weight: bold;
   color: black;
   border-radius: 25px;
@@ -51,4 +54,20 @@ button:hover {
 #kategori-menu > label {
   padding: 5px 10px;
   cursor: pointer;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(44, 180, 101);
+  width: 100%;
+  font-weight: bold;
+}
+
+#footer a {
+  color: black;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
 }

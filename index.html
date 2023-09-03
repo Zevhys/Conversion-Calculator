@@ -15,25 +15,37 @@
           type="radio"
           id="panjang"
           name="kategori"
-          value=""
+          value="panjang"
           checked="checked"
+          onclick="kategori_menu(this.value)"
         />
         <label for="panjang">Panjang</label>
 
-        <input type="radio" id="suhu" name="kategori" value="" />
+        <input
+          type="radio"
+          id="suhu"
+          name="kategori"
+          value="suhu"
+          onclick="kategori_menu(this.value)"
+        />
         <label for="suhu">Suhu</label>
 
-        <input type="radio" id="volume" name="kategori" value="" />
+        <input type="radio" id="volume" name="kategori" value="volume" />
         <label for="volume">Volume</label>
 
-        <input type="radio" id="massa" name="kategori" value="" />
+        <input type="radio" id="massa" name="kategori" value="massa" />
         <label for="massa">Massa</label>
       </div>
       <br />
       <br />
 
       <div>
-        <input type="number" placeholder="0" id="user-input-var" />
+        <input
+          type="number"
+          placeholder="0"
+          id="user-input-var"
+          oninput="konversi(this.value)"
+        />
         <br />
         <select id="user-input">
           <option name="" id="">cm</option>
@@ -53,16 +65,10 @@
       </div>
     </div>
 
-    <!-- <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>0</button> -->
+    <div id="footer">
+      <a href="https://github.com/Zevhys"> Made By Zevhys </a>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
