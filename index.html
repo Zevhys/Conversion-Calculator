@@ -1,17 +1,68 @@
 <html lang="id">
-    
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Konversi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <h1>Kalkulator Konversi</h1>    
+  <body>
+    <div class="kalkulator">
+      <h1 style="text-align: center">Pengonversi Satuan</h1>
 
+      <div id="kategori-menu">
+        <input
+          type="radio"
+          id="panjang"
+          name="kategori"
+          value=""
+          checked="checked"
+        />
+        <label for="panjang">Panjang</label>
+
+        <input type="radio" id="suhu" name="kategori" value="" />
+        <label for="suhu">Suhu</label>
+
+        <input type="radio" id="volume" name="kategori" value="" />
+        <label for="volume">Volume</label>
+
+        <input type="radio" id="massa" name="kategori" value="" />
+        <label for="massa">Massa</label>
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <input type="number" placeholder="0" id="user-input-var" />
+        <br />
+        <select id="user-input">
+          <option name="" id="">cm</option>
+          <option name="" id="">m</option>
+        </select>
+      </div>
+
+      <div class="sama-dengan">=</div>
+
+      <div>
+        <input type="number" placeholder="0" id="user-output-var" />
+        <br />
+        <select id="user-output">
+          <option name="" id="">cm</option>
+          <option name="" id="">m</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>0</button> -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
