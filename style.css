@@ -1,12 +1,13 @@
 :root {
   color-scheme: dark;
   font-family: arial;
+  --color-theme: rgb(112, 129, 175);
 }
 
 .kalkulator {
   margin: auto;
   max-width: fit-content;
-  border: 2px solid rgb(117, 165, 165);
+  border: 2px solid var(--color-theme);
   padding: 10px 15px 25px 15px;
   background-color: rgb(41, 41, 41);
   color-scheme: light;
@@ -41,7 +42,7 @@ button:hover {
 }
 
 #kategori-menu > input:checked + label {
-  background-color: goldenrod;
+  background-color: var(--color-theme);
   font-weight: bold;
   color: black;
   border-radius: 25px;
